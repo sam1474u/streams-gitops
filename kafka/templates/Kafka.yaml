@@ -73,16 +73,10 @@ spec:
       # Default value: 1000012
       message.max.bytes: 52428800
     storage:
-      type: jbod
-      volumes:
-      - id: 0
-        type: persistent-claim
-        size: 10Gi
-        deleteClaim: true
-      - id: 1
-        type: persistent-claim
-        size: 10Gi
-        deleteClaim: true
+      class: gp3-csi
+      size: 50Gi
+      type: persistent-claim
+      deleteClaim: true
     livenessProbe:
       initialDelaySeconds: 60
       timeoutSeconds: 5
