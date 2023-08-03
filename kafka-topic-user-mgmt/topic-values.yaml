@@ -1,4 +1,4 @@
-kafkaCluster: kafka01
+kafkaCluster: kafka-cluster-demo
 kafkaTopics:
   - name: shared-topic1
     partitions: 3
