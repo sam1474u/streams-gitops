@@ -73,7 +73,7 @@ spec:
       # Default value: 1000012
       message.max.bytes: 52428800
     storage:
-      class: gp3-csi
+      class: ocp-powerflex-xfs
       size: 50Gi
       type: persistent-claim
       deleteClaim: true
