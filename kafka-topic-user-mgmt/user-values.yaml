@@ -1,9 +1,9 @@
 kafkaCluster: kafka-cluster-demo
-consumerByteRate: 1000
-producerByteRate: 100
-requestPercentage: 55
 kafkaUsers:
   - name: kafka-user-1
+    consumerByteRate: 1000
+    producerByteRate: 100
+    requestPercentage: 55
     topics:
       - name: shared-topic1
         operations: 
@@ -12,17 +12,26 @@ kafkaUsers:
           - Describe
   - name: kafka-user-2
     topics:
+      consumerByteRate: 1000
+      producerByteRate: 100
+      requestPercentage: 55
       - name: shared-topic1
         operations: 
           - Read
           - Describe
   - name: kafka-user-3
+    consumerByteRate: 1000
+    producerByteRate: 100
+    requestPercentage: 55
     topics:
       - name: shared-topic1
         operations: 
           - Read
           - Describe
   - name: kafka-user-4
+    consumerByteRate: 1000
+    producerByteRate: 100
+    requestPercentage: 55
     topics:
       - name: shared-topic1
         operations:
