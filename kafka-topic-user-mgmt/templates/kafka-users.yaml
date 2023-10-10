@@ -10,10 +10,10 @@ spec:
   authentication:
     type: scram-sha-512
   quotas:
-    consumerByteRate: {{$consumer.bytes}}
-    controllerMutationRate: {{$cont.mutation}}
-    producerByteRate: {{$producer.byterate}}
-    requestPercentage: {{$request.percent}}
+    consumerByteRate: {{ .Values.consumerByteRate }}
+    controllerMutationRate: {{ .Values.controllerMutationRate }}
+    producerByteRate: {{ .Values.producerByteRate }}
+    requestPercentage: {{ .Values.requestPercentage }}
   authorization:
     type: simple
     acls:
