@@ -1,6 +1,5 @@
 kafkaCluster: kafka-cluster-demo
 consumerByteRate: 1000
-controllerMutationRate: 100
 producerByteRate: 100
 requestPercentage: 55
 kafkaUsers:
