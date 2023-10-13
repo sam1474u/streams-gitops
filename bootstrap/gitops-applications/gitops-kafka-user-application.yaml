@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/maschind/kafka-gitops.git
+    repoURL: https://github.com/sam1474u/kafka-gitops.git
     targetRevision: main
     path: kafka-topic-user-mgmt
     helm:
